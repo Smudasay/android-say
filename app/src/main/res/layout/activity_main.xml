@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.applicationtemperature.MainActivity"
+    android:background="@drawable/y"
+    >
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:fontFamily="casual"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:hint="Enter Number"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <Button
+
+        android:id="@+id/btC2F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:onClick="C2F"
+        android:shadowColor="#fff"
+        android:text="C => F"
+        android:textStyle="bold"
+        tools:ignore="HardcoreText"
+        app:layout_constraintTop_toBottomOf="@id/edt1"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_margin="50dp"
+
+ />
+    <Button
+        android:id="@+id/btF2C"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:onClick="F2C"
+        android:text="F => C"
+        tools:ignore="HardcoreText"
+        app:layout_constraintTop_toBottomOf="@id/edt1"
+        android:layout_margin="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:gravity="center"
+        android:text="Answer"
+        android:textColor="#F10"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+</android.support.constraint.ConstraintLayout>
+
